@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("/static/imgs/bg3.jpg");
+}
+
+.card {
+  border: 3px solid white;
+  border-radius: 15px;
+  width: 600px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+}
+.card .signup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .signup img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.card .signup p {
+  font-size: larger;
+  font-weight: bolder;
+}
+.card form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 8px;
+}
+.card form input, .card form button {
+  outline: none;
+  border: none;
+}
+.card form input {
+  background: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.card form #bio, .card form #password, .card form button {
+  grid-column: 1/-1;
+}
+.card form button {
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(8, 62, 8, 0.682);
+  color: white;
+  transition: background-color 0.03s ease;
+}
+.card form button:hover {
+  background-color: rgba(8, 62, 8, 0.962);
+}
+
+.login {
+  font-size: 20px;
+}
+.login a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.04s ease;
+}
+.login a:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=signUp.css.map */
